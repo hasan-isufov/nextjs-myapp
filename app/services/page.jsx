@@ -31,14 +31,14 @@ const Services = () => {
       name: "SEO Services",
       description:
         "Data-Driven Strategies to Dominate Search Rankings & Grow Organic Traffic.Boost your online visibility with our comprehensive SEO services, including keyword research, on-page optimization, technical SEO, and content strategy. We analyze your competitors, fix crawl errors, and optimize metadata to improve rankings on Google, Bing, and other search engines. Our white-hat techniques ensure sustainable growth, higher click-through rates (CTR), and increased lead generation.",
-      imageUrl: "/SEO-Services.jpg",
+      imageUrl: "/SEO-services.jpg",
     },
 
     {
       name: "Digital Marketing",
       description:
         "Targeted Campaigns to Expand Your Reach & Maximize ROI.From social media ads and PPC campaigns to email marketing and influencer partnerships, we create data-driven strategies to attract and convert your ideal audience. Our team leverages Google Ads, Meta Ads, LinkedIn, and programmatic advertising to deliver measurable results. We track KPIs, refine audience targeting, and optimize ad spend to maximize your return on investment (ROI).",
-      imageUrl: "/Digital-Marketing.jpg",
+      imageUrl: "/digital-Marketing.jpg",
     },
     {
       name: "Performance Optimization",
