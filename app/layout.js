@@ -24,6 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable} font-sans`}>
+
+
+
       <body className="bg-black">
         <Particles
           className="fixed top-0 left-0 w-full h-full z-[-1]"
@@ -38,7 +41,7 @@ export default function RootLayout({ children }) {
         />
         <Header />
         {children}
-        <GoogleAnalytics gaMeasurementId={process.env.GA_MANAGEMENT_ID} />
+        <GoogleAnalytics gaId={process.env.GA_MANAGEMENT_ID} />
         <Toaster richColors position="top-right" />
         <Footer />
       </body>
