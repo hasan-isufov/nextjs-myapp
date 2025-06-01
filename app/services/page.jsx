@@ -38,7 +38,7 @@ const Services = () => {
       name: "Digital Marketing",
       description:
         "Targeted Campaigns to Expand Your Reach & Maximize ROI.From social media ads and PPC campaigns to email marketing and influencer partnerships, we create data-driven strategies to attract and convert your ideal audience. Our team leverages Google Ads, Meta Ads, LinkedIn, and programmatic advertising to deliver measurable results. We track KPIs, refine audience targeting, and optimize ad spend to maximize your return on investment (ROI).",
-      imageUrl: "/digital-Marketing.jpg",
+      imageUrl: "/digital-marketing.jpg",
     },
     {
       name: "Performance Optimization",
