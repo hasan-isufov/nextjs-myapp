@@ -4,7 +4,7 @@ import Header from "@/components/ui/Header";
 import { Roboto } from "next/font/google";
 import { Toaster } from "sonner";
 import { Particles } from "@/components/magicui/particles";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from "next/script";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,9 +24,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable} font-sans`}>
-
-
-
       <body className="bg-black">
         <Particles
           className="fixed top-0 left-0 w-full h-full z-[-1]"
@@ -41,9 +38,22 @@ export default function RootLayout({ children }) {
         />
         <Header />
         {children}
-        <GoogleAnalytics gaId={process.env.GA_MANAGEMENT_ID} />
+        
         <Toaster richColors position="top-right" />
         <Footer />
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-LZWH922GJY"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LZWH922GJY');
+          `}
+        </Script>
       </body>
     </html>
   );
