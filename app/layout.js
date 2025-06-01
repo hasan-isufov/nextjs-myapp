@@ -4,6 +4,7 @@ import Header from "@/components/ui/Header";
 import { Roboto } from "next/font/google";
 import { Toaster } from "sonner";
 import { Particles } from "@/components/magicui/particles";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
         />
         <Header />
         {children}
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         <Toaster richColors position="top-right" />
         <Footer />
       </body>
