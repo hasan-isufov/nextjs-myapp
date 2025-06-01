@@ -1,7 +1,7 @@
 import Footer from "@/components/ui/footer";
 import "./globals.css";
 import Header from "@/components/ui/Header";
-import { Roboto } from "@next/font/google";
+import { Roboto } from "next/font/google";
 import { Toaster } from "sonner";
 import { Particles } from "@/components/magicui/particles";
 
