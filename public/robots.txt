@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.zenith-web.co.uk/
+
+# Sitemaps
+Sitemap: https://www.zenith-web.co.uk/sitemap.xml
