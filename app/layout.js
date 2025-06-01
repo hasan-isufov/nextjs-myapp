@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         />
         <Header />
         {children}
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        <GoogleAnalytics gaMeasurementId={process.env.GA_MANAGEMENT_ID} />
         <Toaster richColors position="top-right" />
         <Footer />
       </body>
