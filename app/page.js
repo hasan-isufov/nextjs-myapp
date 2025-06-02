@@ -18,14 +18,14 @@ export default function Home() {
     <main className={`${roboto.className} overflow-x-hidden`}>
       {/* Hero Section */}
       <section className="relative h-[40rem] md:h-screen w-full">
-        <div className="absolute h-[25rem] w-[25rem] md:h-screen md:w-full mx-auto inset-0 overflow-hidden">
+        <div className="absolute max-sm:h-[25rem] max-sm:w-[25rem] h-[25rem] w-[35rem] h- md:h-screen md:w-full mx-auto inset-0 overflow-hidden">
           <Spline
             scene="https://prod.spline.design/j86JKeJ4bkA6Rh1o/scene.splinecode"
             loading="lazy"
           />
         </div>
 
-        <div className="absolute top-[29rem] sm:top-[40rem] 3xl:top-[62rem]   left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4 " >
+        <div className="absolute top-[29rem] md:top-[40rem] 3xl:top-[62rem]   left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4 " >
           <h1
             className="text-5xl md:text-7xl font-bold text-center text-transparent 
             bg-gradient-to-r from-blue-600 via-violet-600 to-pink-500
@@ -73,7 +73,7 @@ export default function Home() {
             across all digital platforms.
           </p>
 
-          <div className="w-full overflow-hidden px-4">
+          <div className="w-full overflow-hidden px-4  max-w-sm:mx-0 max-w-sm:px-0 md:max-w-2xl md:mx-auto">
             <InfiniteMovingCardsDemo />
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function Home() {
       <section className="3xl:mx-[45rem] 3xl:my-0 3xl:py-0  ">
         <How />
       </section>
-      <div className=" 3xl:flex 3xl:flex-row 3xl:my-0 3xl:py-0 ">
+      <div className=" pt-[40rem] 3xl:flex 3xl:flex-row 3xl:my-0 3xl:py-0  ">
         <Contact className=" 3xl:my-0 3xl:py-0 3xl:top-0 " />
       </div>
     </main>
