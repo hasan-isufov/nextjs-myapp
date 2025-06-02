@@ -19,6 +19,17 @@ export const metadata = {
 
   description:
     "Zenith Web is your one-stop solution for all web development needs, offering services in UI/UX design, SEO, digital marketing, and performance optimization. Our expert team ensures your website is fast, secure, and user-friendly, helping you achieve your business goals.",
+  authors: [
+    {
+      name: "Zenith Web",
+      url: "https://www.zenithweb.com",
+    },
+  ],
+  icons: {
+    icon: "/next-logo-title.png",
+
+    shortcut: "/next-logo-title.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -38,7 +49,7 @@ export default function RootLayout({ children }) {
         />
         <Header />
         {children}
-        
+
         <Toaster richColors position="top-right" />
         <Footer />
 

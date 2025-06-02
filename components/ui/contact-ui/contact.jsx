@@ -24,9 +24,9 @@ const Contact = () => {
       {/* Contact Content */}
       <section
         id="contact"
-        className="relative z-10 w-full py-12 md:py-20 lg:py-24 px-4 sm:px-6 3xl:px-8 flex 3xl:py-0 items-center justify-center min-h-[calc(100vh-80px)]"
+        className="relative z-10 w-full py-12 md:py-20 lg:py-24   px-4 sm:px-6 3xl:px-8 flex 3xl:py-0 items-center justify-center min-h-[calc(100vh-80px)]"
       >
-        <div className="mx-auto max-w-7xl 3xl:max-w-[1800px] w-full">
+        <div className="mx-auto max-w-7xl 3xl:max-w-[1800px]  w-full">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 3xl:gap-16 w-full">
             {/* Left Column - Contact Info */}
             <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-start backdrop-blur-sm bg-black/30 p-6 rounded-lg 3xl:p-8 h-full">

@@ -73,7 +73,7 @@ export default function Home() {
             across all digital platforms.
           </p>
 
-          <div className="w-full overflow-hidden px-4  max-w-sm:mx-0 max-w-sm:px-0 md:max-w-2xl md:mx-auto">
+          <div className="w-full overflow-hidden px-4  md:mx-auto">
             <InfiniteMovingCardsDemo />
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function Home() {
       <section className="3xl:mx-[45rem] 3xl:my-0 3xl:py-0  ">
         <How />
       </section>
-      <div className=" pt-[40rem] 3xl:flex 3xl:flex-row 3xl:my-0 3xl:py-0  ">
+      <div className=" pt-[40rem] md:pt-0 3xl:flex 3xl:flex-row 3xl:my-0 3xl:py-0  ">
         <Contact className=" 3xl:my-0 3xl:py-0 3xl:top-0 " />
       </div>
     </main>
