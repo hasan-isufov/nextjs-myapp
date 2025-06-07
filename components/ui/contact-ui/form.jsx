@@ -51,7 +51,7 @@ export default function ContactForm() {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full max-w-4xl bg-zinc-900/50 border-2 border-white/20 overflow-hidden py-4 rounded-lg shadow-lg p-4 sm:p-6 space-y-4 backdrop-blur-md"
+        className="w-full max-w-4xl bg-zinc-900/50 border-2 border-white/20 overflow-hidden py-4  rounded-2xl shadow-lg p-4 sm:p-6 space-y-4 backdrop-blur-md"
       >
         <h2
           className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-transparent 
@@ -83,7 +83,7 @@ export default function ContactForm() {
                 message: "Full name must not exceed 50 characters",
               },
             })}
-            className="mt-1 block w-full text-amber-100  px-3 py-2 text-md font-bold sm:text-md border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-400 focus:border-indigo-400"
+            className="mt-1 block w-full text-amber-100  px-3 py-2 text-md font-bold sm:text-md border border-gray-300  rounded-2xl  focus:outline-none focus:ring-indigo-400 focus:border-indigo-400"
           />
           {errors.fullName && (
             <p className="mt-1 text-xs sm:text-sm text-red-400">
@@ -110,7 +110,7 @@ export default function ContactForm() {
                 message: "Invalid email address",
               },
             })}
-            className="mt-1 block w-full text-amber-100 font-bold px-3 py-2 text-sm sm:text-md border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-400 focus:border-indigo-400"
+            className="mt-1 block w-full text-amber-100 font-bold px-3 py-2 text-sm sm:text-md border border-gray-300 rounded-2xl  focus:outline-none focus:ring-indigo-400 focus:border-indigo-400"
           />
           {errors.email && (
             <p className="mt-1 text-xs sm:text-sm text-red-400">
@@ -136,7 +136,7 @@ export default function ContactForm() {
                 message: "Invalid phone number",
               },
             })}
-            className="mt-1 block w-full text-amber-100 font-bold px-3 py-2 text-sm sm:text-md border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-400 focus:border-indigo-400"
+            className="mt-1 block w-full text-amber-100 font-bold px-3 py-2 text-sm sm:text-md border border-gray-300 rounded-2xl focus:outline-none focus:ring-indigo-400 focus:border-indigo-400"
           />
           {errors.phone && (
             <p className="mt-1 text-xs sm:text-sm text-red-400">
@@ -155,9 +155,9 @@ export default function ContactForm() {
           </label>
           <textarea
             id="message"
-            rows={4}
+            rows={7}
             {...register("message", { required: "Message is required" })}
-            className="mt-1 block w-full text-amber-100 font-bold px-3 py-2 text-sm sm:text-md border  border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-400 focus:border-indigo-400"
+            className="mt-1 block w-full text-amber-100 font-bold px-3 py-2 text-sm sm:text-md border  border-gray-300 rounded-2xl focus:outline-none focus:ring-indigo-400 focus:border-indigo-400"
           />
           {errors.message && (
             <p className="mt-1 text-xs sm:text-sm text-red-400">
@@ -179,7 +179,7 @@ export default function ContactForm() {
             type="file"
             ref={fileInputRef}
             {...register("file")}
-            className="mt-3 w-full text-xs sm:text-sm md:text-md text-gray-400 file:mr-2 sm:file:mr-4 file:py-1 sm:file:py-2 file:px-2 sm:file:px-4 file:rounded-lg file:border-0 file:text-xs sm:file:text-md file:font-bold file:bg-indigo-50 file:text-indigo-400 hover:file:bg-indigo-100"
+            className="mt-3 w-full  text-xs sm:text-sm md:text-md text-gray-400 file:mr-2 sm:file:mr-4 file:py-1 sm:file:py-2 file:px-2 sm:file:px-4 file:rounded-lg file:border-0 file:text-xs sm:file:text-md file:font-bold file:bg-indigo-50 file:text-indigo-400 hover:file:bg-indigo-100"
           />
         </div>
 
@@ -187,7 +187,7 @@ export default function ContactForm() {
         <div>
           <button
             type="submit"
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm sm:text-md font-bold text-white bg-indigo-400 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-400"
+            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-2xl shadow-sm text-sm sm:text-md font-bold text-white bg-indigo-400 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-400"
           >
             Submit
           </button>

@@ -7,7 +7,6 @@ import How from "@/components/ui/home/hoWork";
 import Link from "next/link";
 import Contact from "@/components/ui/contact-ui/contact";
 
-
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -20,16 +19,17 @@ export default function Home() {
       <section className="relative h-[40rem] md:h-screen w-full">
         <div className="absolute max-sm:h-[25rem] max-sm:w-[25rem] h-[25rem] w-[35rem] h- md:h-screen md:w-full mx-auto inset-0 overflow-hidden">
           <Spline
-            scene="https://prod.spline.design/j86JKeJ4bkA6Rh1o/scene.splinecode"
+            className="w-full h-full"
+            scene="https://prod.spline.design/uQYPIMLCEBSmrW4f/scene.splinecode"
             loading="lazy"
           />
         </div>
 
-        <div className="absolute top-[29rem] md:top-[40rem] 3xl:top-[62rem]   left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4 " >
+        <div className="absolute top-[29rem] md:top-[40rem] 3xl:top-[62rem]   left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4 ">
           <h1
             className="text-5xl md:text-7xl font-bold text-center text-transparent 
             bg-gradient-to-r from-blue-600 via-violet-600 to-pink-500
-            bg-clip-text py-4" 
+            bg-clip-text py-4"
           >
             Zenith Web App Design & Development
           </h1>
@@ -38,17 +38,17 @@ export default function Home() {
 
       {/* Intro Text */}
       <section className="w-full px-4 md:px-8  md:py-20 bg-transparent">
-        <div className="max-w-5xl mx-auto text-center">
-          <h3 className="text-gray-300 text-lg md:text-2xl">
+        <div className=" md:max-w-5xl mx-auto text-center">
+          <h2 className="text-gray-300 text-lg md:text-2xl">
             Boost your online presence with custom web app development and
             cutting-edge UX/UI design. Zenith delivers high-performance,
             scalable web applications tailored for startups and enterprises.
             Fast, secure, and SEO-optimized – transform your vision into a
             seamless digital experience.
-          </h3>
+          </h2>
 
           <div className="mt-10">
-            <Button className="hover:text-violet-600 hover:font-bold transition-all duration-200 cursor-pointer">
+            <Button className="hover:text-violet-600 hover:font-bold transition-all duration-200 cursor-pointer p-2">
               <Link href="#contact">Contact Us</Link>
             </Button>
           </div>
@@ -73,8 +73,8 @@ export default function Home() {
             across all digital platforms.
           </p>
 
-          <div className="w-full overflow-hidden px-4  md:mx-auto">
-            <InfiniteMovingCardsDemo />
+          <div className="w-full overflow-hidden   md:mx-auto">
+            <InfiniteMovingCardsDemo speed="slow" direction="right" />
           </div>
         </div>
       </section>

@@ -36,16 +36,6 @@ const Contact = () => {
 
               <div className="space-y-3 sm:space-y-4 3xl:space-y-5 w-full">
                 <div className="flex items-center text-gray-300 text-sm sm:text-base md:text-lg 3xl:text-xl">
-                  <BsTelephoneForwardFill className="w-5 h-5 sm:w-6 sm:h-6 mr-3 3xl:w-7 3xl:h-7" />
-                  <span>+44 (123) 456-7890</span>
-                </div>
-
-                <div className="flex items-center text-gray-300 text-sm sm:text-base md:text-lg 3xl:text-xl">
-                  <IoLogoWhatsapp className="w-5 h-5 sm:w-6 sm:h-6 mr-3 3xl:w-7 3xl:h-7" />
-                  <span>+44 (123) 456-7890</span>
-                </div>
-
-                <div className="flex items-center text-gray-300 text-sm sm:text-base md:text-lg 3xl:text-xl">
                   <IoIosMail className="w-5 h-5 sm:w-6 sm:h-6 mr-3 3xl:w-7 3xl:h-7" />
                   <span>info@zenith-web.co.uk</span>
                 </div>
